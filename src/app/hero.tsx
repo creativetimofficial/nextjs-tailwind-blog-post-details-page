@@ -1,60 +1,45 @@
 "use client";
 
-import Image from "next/image";
-import { Input, Button, Typography } from "@material-tailwind/react";
+import { IconButton, Typography } from "@material-tailwind/react";
+
 
 function Hero() {
   return (
-    <header className="bg-white p-8">
-      <div className="container mx-auto grid h-full gap-10 min-h-[60vh] w-full grid-cols-1 items-center lg:grid-cols-2">
-        <div className="row-start-2 lg:row-auto">
-          <Typography
-            variant="h1"
-            color="blue-gray"
-            className="mb-4 lg:text-5xl !leading-tight text-3xl"
-          >
-            Welcome to my Web <br /> Development Portofolio!
-          </Typography>
-          <Typography
-            variant="lead"
-            className="mb-4 !text-gray-500 md:pr-16 xl:pr-28"
-          >
-            I&apos;m Lily Smith, a passionate web developer based in USA. Here,
-            you&apos;ll get a glimpse of my journey in the world of web
-            development, where creativity meets functionality.
-          </Typography>
-          <div className="grid">
-            <Typography
-              variant="small"
-              className="mb-2 text-gray-900 font-medium"
-            >
-              Your email
-            </Typography>
-            <div className="mb-2 flex w-full flex-col gap-4 md:w-10/12 md:flex-row">
-              {/* @ts-ignore */}
-              <Input color="gray" label="Enter your email" size="lg" />
-              <Button color="gray" className="w-full px-4 md:w-[12rem]">
-                require offer
-              </Button>
-            </div>
-          </div>
-          <Typography variant="small" className="font-normal !text-gray-500">
-            Read my{" "}
-            <a href="#" className="font-medium underline transition-colors">
-              Terms and Conditions
-            </a>
-          </Typography>
+    <div className="relative min-h-screen w-full bg-[url('/image/image-4.jpeg')] bg-cover bg-no-repeat">
+    <div className="absolute inset-0 h-full w-full bg-gray-900/75" />
+    <div className="grid min-h-screen px-8">
+      <div className="container relative z-10 my-auto mx-auto grid place-items-center text-center">
+        <Typography variant="h1" color="white">
+          Exploring the Wonders of Biologyat Night...
+        </Typography>
+        <Typography
+          variant="lead"
+          color="white"
+          className="mt-4 mb-12 w-full md:max-w-full lg:max-w-3xl"
+        >
+          Introduction: Join us in a a journey into the world of life!
+        </Typography>
+        <Typography
+          variant="paragraph"
+          color="white"
+          className="mt-1 mb-7 font-medium uppercase"
+        >
+          Connect with us on:
+        </Typography>
+        <div className="gap-8 flex">
+          <IconButton variant="text" color="white" size="sm">
+            <i className="fa-brands fa-twitter text-base" />
+          </IconButton>
+          <IconButton variant="text" color="white" size="sm">
+            <i className="fa-brands fa-facebook text-base" />
+          </IconButton>
+          <IconButton variant="text" color="white" size="sm">
+            <i className="fa-brands fa-instagram text-base" />
+          </IconButton>
         </div>
-        <Image
-          width={1024}
-          height={1024}
-          alt="team work"
-          src="/image/image7.svg"
-          className="h-[36rem] w-full rounded-xl object-cover"
-        />
       </div>
-    </header>
+    </div>
+  </div>
   );
 }
-
 export default Hero;

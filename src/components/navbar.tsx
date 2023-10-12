@@ -6,33 +6,10 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
-import {
-  RectangleStackIcon,
-  UserCircleIcon,
-  CommandLineIcon,
-  Squares2X2Icon,
-  XMarkIcon,
-  Bars3Icon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-const NAV_MENU = [
-  {
-    name: "Page",
-    icon: RectangleStackIcon,
-  },
-  {
-    name: "Account",
-    icon: UserCircleIcon,
-  },
-  {
-    name: "Blocks",
-    icon: Squares2X2Icon,
-  },
-  {
-    name: "Docs",
-    icon: CommandLineIcon,
-  },
-];
+
+const NAV_MENU = ["Home", "About Us", "Contact Us"];
 
 function NavItem({ children }: { children: React.ReactNode }) {
   return (
@@ -53,7 +30,9 @@ function NavItem({ children }: { children: React.ReactNode }) {
 export function Navbar() {
   const [open, setOpen] = React.useState(false);
 
-  const handleOpen = () => setOpen((cur) => !cur);
+  function handleOpen() {
+    setOpen((cur) => !cur);
+  }
 
   React.useEffect(() => {
     window.addEventListener(
@@ -63,26 +42,32 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar shadow={false} fullWidth className="border-0">
+    <MTNavbar
+      shadow={false}
+      fullWidth
+      color="transparent"
+      className="absolute z-10 border-0"
+    >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography color="blue-gray" className="text-lg font-bold">
+        <Typography color="white" className="text-lg font-bold">
           Material Tailwind
         </Typography>
         <ul className="ml-10 hidden items-center gap-8 lg:flex">
-          {NAV_MENU.map(({ name, icon: Icon }) => (
+          {NAV_MENU.map((name) => (
             <NavItem key={name}>
-              <Icon className="h-5 w-5" />
-              {name}
+              <span className="text-white">{name}</span>
             </NavItem>
           ))}
         </ul>
         <div className="hidden items-center gap-2 lg:flex">
-          <Button variant="text">Sign In</Button>
-          <Button color="gray">Sign Up</Button>
+          <Button variant="text" color="white">
+            Log in
+          </Button>
+          <Button color="white">see offers</Button>
         </div>
         <IconButton
           variant="text"
-          color="gray"
+          color="white"
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
         >
@@ -94,23 +79,23 @@ export function Navbar() {
         </IconButton>
       </div>
       <Collapse open={open}>
-        <div className="container mx-auto mt-3 border-t border-gray-200 px-2 pt-4">
+        <div className="container mx-auto bg-white rounded-lg py-4 px-6 mt-3 border-t border-gray-200">
           <ul className="flex flex-col gap-4">
-            {NAV_MENU.map(({ name, icon: Icon }) => (
-              <NavItem key={name}>
-                <Icon className="h-5 w-5" />
-                {name}
-              </NavItem>
+            {NAV_MENU.map((name) => (
+              <NavItem key={name}>{name}</NavItem>
             ))}
           </ul>
-          <div className="mt-6 mb-4 flex items-center gap-2">
-            <Button variant="text">Sign In</Button>
-            <Button color="gray">Sign Up</Button>
+          <div className="mt-6 flex items-center gap-2">
+            <Button variant="text">Log in</Button>
+            <Button color="gray">see offers</Button>
           </div>
         </div>
       </Collapse>
     </MTNavbar>
   );
 }
+
+
+
 
 export default Navbar;
