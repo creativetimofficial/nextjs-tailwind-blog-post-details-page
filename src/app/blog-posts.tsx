@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 import BlogCardWithImage from "@/components/blog-card-with-image";
-import SimpleBlogCard from  "@/components/simple-blog-card";
+import SimpleBlogCard from "@/components/simple-blog-card";
 
 const SIMPLE_CONTENT = [
   {
@@ -72,7 +72,7 @@ export function BlogPost() {
                     <Image
                       width={256}
                       height={256}
-                      src="/image/avatar2.jpg"
+                      src="/nextjs-tailwind-blog-post-details-page/image/avatar2.jpg"
                       className="w-12 object-cover h-12 rounded-lg"
                       alt="photo"
                     />
@@ -106,7 +106,7 @@ export function BlogPost() {
                     <Image
                       width={256}
                       height={256}
-                      src="/image/avatar1.jpg"
+                      src="/nextjs-tailwind-blog-post-details-page/image/avatar1.jpg"
                       className="w-12 object-cover h-12 rounded-lg"
                       alt="photo"
                     />
@@ -135,7 +135,7 @@ export function BlogPost() {
                   <Image
                     width={768}
                     height={768}
-                    src="/image/blogs/blog-2.png"
+                    src="/nextjs-tailwind-blog-post-details-page/image/blogs/blog-2.png"
                     className="w-10/12 md:w-full object-cover h-full rounded-lg"
                     alt=""
                   />
@@ -159,7 +159,7 @@ export function BlogPost() {
                   <Image
                     width={768}
                     height={768}
-                    src="/image/blogs/blog-3.png"
+                    src="/nextjs-tailwind-blog-post-details-page/image/blogs/blog-3.png"
                     className="w-10/12 md:w-full object-cover h-full rounded-lg"
                     alt=""
                   />

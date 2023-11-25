@@ -39,7 +39,7 @@ export function Content() {
         <Image
           width={768}
           height={500}
-          src="/image/event.jpeg"
+          src="/nextjs-tailwind-blog-post-details-page/image/event.jpeg"
           alt="post"
           className="mb-4 h-[28rem] w-full rounded-xl object-cover"
         />
@@ -125,7 +125,7 @@ export function Content() {
                 <Image
                   width={768}
                   height={768}
-                  src="/image/avatar1.jpg"
+                  src="/nextjs-tailwind-blog-post-details-page/image/avatar1.jpg"
                   className="rounded-2xl"
                   alt="photo"
                 />

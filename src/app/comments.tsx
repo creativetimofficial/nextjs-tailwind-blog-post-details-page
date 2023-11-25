@@ -8,13 +8,13 @@ import { NewComment } from "@/components/new-comment";
 
 const COMMENTS = [
   {
-    img: "/image/avatar1.jpg",
+    img: "/nextjs-tailwind-blog-post-details-page/image/avatar1.jpg",
     name: "Tina Andrew",
     hours: " · 7 minutes ago",
     desc: "Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country. Panda! Don't be scared of the truth because we need to restart the human foundation in truth I stand with the most humility. We are so blessed!All praises and blessings to the families of people who never gave up on dreams. Don't forget, You're Awesome! ",
   },
   {
-    img: "/image/avatar2.jpg",
+    img: "/nextjs-tailwind-blog-post-details-page/image/avatar2.jpg",
     name: "Emma Roberts",
     hours: " · 2 hours ago",
     desc: "Hello guys, nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.Don't forget, You're awesome!",
@@ -34,7 +34,7 @@ export function Comments() {
         <div className="md:pl-14">
           <CommentCard
             desc="nice to have you on the platform! There will be a lot of great stuff coming soon. We will keep you posted for the latest news.Don't forget, You're awesome!"
-            img="/image/avatar1.jpg"
+            img="/nextjs-tailwind-blog-post-details-page/image/avatar1.jpg"
             name="Tina Andrew "
             hours=" · 2 hours ago"
           />

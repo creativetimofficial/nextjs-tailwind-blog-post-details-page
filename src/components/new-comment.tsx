@@ -9,7 +9,7 @@ export function NewComment() {
           <Image
             width={768}
             height={768}
-            src="/image/avatar1.jpg"
+            src="/nextjs-tailwind-blog-post-details-page/image/avatar1.jpg"
             alt="img"
             className="h-full rounded w-full object-cover object-center"
           />

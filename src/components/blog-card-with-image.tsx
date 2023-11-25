@@ -13,7 +13,7 @@ export function BlogCardWithImage() {
           <Image
             width={768}
             height={768}
-            src="/image/blogs/blog-1.png"
+            src="/nextjs-tailwind-blog-post-details-page/image/blogs/blog-1.png"
             className="w-full h-full rounded-lg"
             alt=""
           />
@@ -32,7 +32,7 @@ export function BlogCardWithImage() {
             <Image
               width={256}
               height={256}
-              src="/image/avatar3.jpg"
+              src="/nextjs-tailwind-blog-post-details-page/image/avatar3.jpg"
               className="w-12 h-12 rounded-lg"
               alt="photo"
             />
