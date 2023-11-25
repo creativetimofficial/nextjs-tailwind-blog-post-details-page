@@ -2,7 +2,7 @@
 
 ![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/nextjs-tailwind-blog-post-details-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-blog-post-details-page/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/nextjs-tailwind-blog-post-details-page.svg)](https://github.com/creativetimofficial/nextjs-tailwind-blog-post-details-page/issues?q=is%3Aissue+is%3Aclosed)
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/746/original/material-tailwind-react-blog-post-template-thumbnail.jpg)
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/747/original/material-tailwind-react-blog-post-details-template-thumbnail.jpg)
 
 Introducing Tailwind Blog Page, a modern and feature-rich blog template built on the foundation of Tailwind CSS and Material Tailwind.
 
