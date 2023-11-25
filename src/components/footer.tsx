@@ -22,7 +22,13 @@ export function Footer() {
     <footer className="mt-10 px-8 pt-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h4" className="mb-6">
+          <Typography
+            as="a"
+            href="https://www.material-tailwind.com"
+            target="_blank"
+            variant="h4"
+            className="mb-6"
+          >
             Material Tailwind
           </Typography>
           <div className="grid grid-cols-3 justify-between gap-4">
@@ -60,7 +66,15 @@ export function Footer() {
             color="gray"
             className="text-center font-normal !text-gray-700"
           >
-            &copy; {CURRENT_YEAR} Creative Tim™. All Rights Reserved.
+            &copy; {CURRENT_YEAR} Made with{" "}
+            <a href="https://www.material-tailwind.com" target="_blank">
+              Material Tailwind
+            </a>{" "}
+            by{" "}
+            <a href="https://www.creative-tim.com" target="_blank">
+              Creative Tim
+            </a>
+            .
           </Typography>
         </div>
       </div>
